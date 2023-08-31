@@ -1,0 +1,24 @@
+name: Update Public Repo
+
+on:
+  push:
+    branches:
+      - 'release'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Update Public Repo
+    steps:
+      - name: Checkout local repo
+        id: checkout_local_repo
+        uses: actions/checkout@v3
+        with:
+          ref: release
+          token: ${{ secrets.GH_PAT }}
+          fetch-depth: 0
+
+      - name: Add Public Repo as remote and push
+        run: |
+          git config --unset-all http.https://github.com/.extraheader
+          git remote add upstream https://${{ secrets.GH_PAT }}@github.com/snap-one/drivers-template-code-public.git
+          git push -u upstream release

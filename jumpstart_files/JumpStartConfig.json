@@ -1,0 +1,421 @@
+{
+    "Update": {
+        "AutoUpdate": "True",
+        "ForceAutoUpdate": "True",
+        "MinimumAutoUpdateVersion": "1",
+        "MinimumOSVersion": "3.0.0"
+    },
+
+    "Serial": {
+        "DefaultBindingID": 1,
+        "BaudRate": 9600,
+        "DataBits": 8,
+        "StopBits": 1,
+        "Parity": "none",
+        "FlowControl": "none"
+    },
+
+    "IR": {
+        "DefaultBindingID": 1
+    },
+
+    "Zigbee": {
+        "DefaultBindingID": 6001
+    },
+
+    "IP":  {
+        "DefaultBindingID": 6001
+    },
+
+    "Url":  {
+        "DefaultBindingID": 6001,
+        
+        "DefaultHTTPPort": 80,
+        "DefaultRTSPPort": 554,
+        "DefaultAuthenticationRequired": "True",
+        "DefaultAuthenticationType": "BASIC",
+        "DefaultUserName": "admin",
+        "DefaultPassword": "pass"
+    },
+    
+    "Network":  {
+        "DefaultBindingID": 6000,
+    
+        "DefaultPort": 80,
+        "DefaultClass": "TCP",
+        
+        "DefaultBroadcastBindingID": 6002,
+        "DefaultBroadcastPort": 9
+    },
+    
+    "MiniApp":  {
+        "DefaultBindingID": 3100
+    },
+
+    "AV":   {
+        "DefaultVideoInputClasses": [
+            "COMPONENT",
+            "COMPOSITE",
+            "HDMI"
+        ],
+    
+        "DefaultVideoOutputClasses": [
+            "COMPONENT",
+            "COMPOSITE",
+            "HDMI"
+        ],
+        
+        "DefaultAudioInputClasses": [
+            "DIGITAL_COAX",
+            "DIGITAL_OPTICAL",
+            "STEREO"
+        ],
+    
+        "DefaultAudioOutputClasses": [
+            "SPEAKER",
+            "STEREO"
+        ]
+    },
+	
+	"Proxies":  {
+        "AVSwitch":   {
+            "Capabilities":  {
+                "can_downclass": "True",
+                "can_switch": "True",
+                "can_upclass": "True",
+                "can_switch_separately": "False",
+                "requires_separate_switching": "False",
+                "has_discrete_balance_control": "True",
+                "has_discrete_bass_control": "True",
+                "has_discrete_input_select": "True",
+                "has_discrete_loudness_control": "True",
+                "has_discrete_mute_control": "True",
+                "has_discrete_treble_control": "True",
+                "has_discrete_volume_control": "True",
+                "has_toad_input_select": "True",
+                "has_toggle_loudness_control": "True",
+                "has_toggle_mute_control": "True",
+                "has_up_down_balance_control": "True",
+                "has_up_down_bass_control": "True",
+                "has_up_down_treble_control": "True",
+                "has_up_down_volume_control": "True",
+                "has_video_sense_control": "True"
+            }
+        },
+
+        "Fan":   {
+            "Capabilities":  {
+                "discrete_levels": "1",
+                "speed_names": "On",
+                "can_set_preset": "False",
+                "preset_speed": "1",
+                "can_reverse": "False"
+            }
+        },
+
+        "Light":   {
+            "ButtonLinkBindingIDBase": 300,
+            "Capabilities":  {
+                "dimmer": "True",
+                "on_off": "True",
+                "set_level": "True",
+                "ramp_level": "True",
+                "min_max": "True",
+                "click_rates": "True",
+                "click_rate_min": "250",
+                "hold_rates": "True",
+                "hold_rate_min": "1000",
+                "cold_start": "True",
+                "has_leds": "True",
+                "supports_broadcast_scenes": "True",
+                "supports_multichannel_scenes": "False",
+                "hide_proxy_properties": "False",
+                "hide_proxy_events": "False",
+                "has_button_events": "True",
+                "advanced_scene_support": "True",
+                "load_group_support": "True",
+                "buttons_are_virtual": "False",
+                "has_load": "True",
+                "max_power": "0",
+                "min_power": "-7",
+
+                "supports_color": "False",
+                "supports_color_correlated_temperature": "False",
+
+                "supports_brightness_stop": "",
+                "supports_color_stop": "",
+                "supports_target": "",
+                "has_extras": "",
+                "click_rate_max": "",
+                "hold_rate_max": "",
+                "color_rate_behavior": "",
+                "color_rate_min": "",
+                "color_rate_max": "",
+                "color_trace_tolerance": "",
+                "supports_default_on": "",
+                "brightness_on_mode_previous": "",
+                "brightness_on_mode_preset": "",
+                "brightness_rate_min": "",
+                "brightness_rate_max": "",
+                "color_on_mode_previous": "",
+                "color_on_mode_preset": "",
+                "color_on_mode_fade": "",
+                "requires_target_preset_ids": "",
+
+                "color_correlated_temperature_min": "",
+                "color_correlated_temperature_max": ""
+            }
+        },
+
+        "Lock":   {
+            "Capabilities":  {
+                "is_management_only": "False",
+                "has_admin_code": "True",
+                "has_schedule_lockout": "True",
+                "has_auto_lock_time": "True",
+                "auto_lock_time_values": "0",
+                "auto_lock_time_display_values": "OFF",
+                "has_log_items_count": "True",
+                "log_item_count_values": "5",
+                "has_lock_modes": "False",
+                "lock_modes_values": "normal",
+                "has_log_failed_attempts": "False",
+                "has_wrong_code_attempts": "False",
+                "wrong_code_attempts_values": "1",
+                "has_shutout_timer": "False",
+                "shutout_timer_values": "5",
+                "shutout_timer_display_values": "5sec",
+                "has_language": "False",
+                "language_values": "English",
+                "has_volume": "True",
+                "has_one_touch_locking": "False",
+                "has_daily_schedule": "True",
+                "has_date_range_schedule": "True",
+                "max_users": "30",
+                "has_settings": "True",
+                "has_custom_settings": "False",
+                "has_internal_history": "True",
+                "can_edit_user": "True",
+                "can_edit_user_pin": "True",
+                "can_add_remove_user": "True"
+            }
+        },
+
+        "MediaPlayer":   {
+            "HasAudio": "True",
+            "HasVideo": "True",
+            "Capabilities":  {
+                "has_http_playback": "True",
+                "has_discrete_volume_control": "True",
+                "has_discrete_mute_control": "True"
+            }
+        },
+
+        "Pool":   {
+            "Capabilities":  {
+                "can_set_time": "True",
+                "can_activate_partitions": "True",
+                "pool_pumpmodes": "Off,On",
+                "spa_pumpmodes": "Off,On",
+                "temp_min": 40,
+                "temp_max": 106,
+                "pool_heat_modes": {
+                    "mode": [
+                        { "id": "1", "text": "Heater" }
+                    ]
+                },
+                "spa_heat_modes": {
+                    "mode": [
+                        { "id": "1", "text": "Heater" }
+                    ]
+                },
+                "aux_types": {
+                    "aux_type": [
+                        { "type": "TOGGLE", "name": "Toggle" }
+                    ]
+                }
+            }
+        },
+
+        "Receiver":   {
+            "Capabilities":  {
+                "has_discrete_volume_control": "True",
+                "has_up_down_volume_control": "True",
+                "has_discrete_input_select": "True",
+                "has_toad_input_select": "True",
+                "has_discrete_surround_mode_select": "True",
+                "has_toad_surround_mode_select": "True",
+                "has_discrete_bass_control": "True",
+                "has_up_down_bass_control": "True",
+                "has_discrete_treble_control": "True",
+                "has_up_down_treble_control": "True",
+                "has_discrete_balance_control": "True",
+                "has_up_down_balance_control": "True",
+                "has_discrete_loudness_control": "True",
+                "has_toggle_loudness_control": "True",
+                "has_discrete_mute_control": "True",
+                "has_toggle_mute_control": "True",
+                "surround_modes": {
+                    "surround_mode": [
+                        { "id": 22620, "name": "Stereo" },
+                        { "id": 22624, "name": "THX" }
+                    ]
+                }
+            }
+        },
+
+        "SecurityPanel":   {
+            "Capabilities":  {
+                "can_set_time": "True",
+                "can_activate_partitions": "True"
+            }
+        },
+
+        "SecurityPartition":   {
+            "Capabilities":  {
+                "ui_version": "2",
+                "supports_virtual_keypad": "True",
+                "has_fire": "True",
+                "has_medical": "False",
+                "has_police": "False",
+                "has_panic": "True",
+                "star_label": "*",
+                "pound_label": "#",
+                "arm_states": "Stay,Away",
+                "functions": "",
+                "button_A": { "visible": "True", "label": "A" },
+                "button_B": { "visible": "True", "label": "B" },
+                "button_C": { "visible": "True", "label": "C" },
+                "button_D": { "visible": "True", "label": "D" }
+            }
+        },
+        
+        "Thermostat":   {
+            "Capabilities":  {
+                "can_heat": "True",
+                "can_cool": "True",
+                "can_do_auto": "True",
+                "hvac_modes": "Off,Heat,Cool,Auto",
+                "fan_modes": "Auto,On",
+                "hold_modes": "Off,Permanent",
+                "has_vacation_mode": "True",
+                "hvac_states": "Off,Heat,Cool",
+                "fan_states": "Off,On",
+                "can_lock_buttons": "True",
+                "has_remote_sensor": "True",
+                "has_extras": "True",
+                "can_change_scale": "True",
+                "has_humidity": "True",
+                "can_humidify": "True",
+                "can_dehumidify": "True",
+                "setpoint_heat_min_f": "40",
+                "setpoint_heat_min_c": "4",
+                "setpoint_heat_max_f": "87",
+                "setpoint_heat_max_c": "30",
+                "setpoint_cool_min_f": "43",
+                "setpoint_cool_min_c": "6",
+                "setpoint_cool_max_f": "90",
+                "setpoint_cool_max_c": "32",
+                "setpoint_heat_resolution_f": "1",
+                "setpoint_heat_resolution_c": ".5",
+                "setpoint_cool_resolution_f": "1",
+                "setpoint_cool_resolution_c": ".5",
+                "current_temperature_resolution_f": "1",
+                "current_temperature_resolution_c": ".5",
+                "can_calibrate": "True",
+                "setpoint_heatcool_deadband_f": "3",
+                "setpoint_heatcool_deadband_c": "2",
+                "setpoint_single_max_f": "90",
+                "setpoint_single_max_c": "32",
+                "setpoint_single_min_f": "40",
+                "setpoint_single_min_c": "5",
+                "setpoint_single_resolution_f": "1",
+                "setpoint_single_resolution_c": ".5",
+                "has_temperature": "True",
+                "has_outdoor_temperature": "True",
+                "humidity_modes": "Off,Humidify,Dehumidify,Auto",
+                "humidity_states": "Off,Humidify,Dehumidify",
+                "setpoint_humidity_deadband": "5",
+                "setpoint_humidify_min": "10",
+                "setpoint_humidify_max": "80",
+                "setpoint_humidify_resolution": "2",
+                "setpoint_dehumidify_min": "20",
+                "setpoint_dehumidify_max": "90",
+                "setpoint_dehumidify_resolution": "2",
+                "has_single_setpoint": "False",
+                "can_inc_dec_setpoints": "True",
+                "current_temperature_min_f": "-40",
+                "current_temperature_max_f": "140",
+                "current_temperature_min_c": "-40",
+                "current_temperature_max_c": "60",
+                "outdoor_temperature_resolution_f": "1",
+                "outdoor_temperature_resolution_c": ".5",
+                "scheduling": "True",
+                "schedule_default": {
+                    "Entries": "6",
+                    "DefaultHeat": "120",
+                    "DefaultCool": "250",
+                    "schedule_day_info": {
+                        "Entries": "6",
+                        "DefaultHeat": "120",
+                        "DefaultCool": "250",
+                        "schedule_entry": [
+                            { "Name": "Awake", "Time": "420", "Enabled": "True", "Heat": "210", "Cool": "250" },
+                            { "Name": "Leave", "Time": "540", "Enabled": "True", "Heat": "160", "Cool": "250" },
+                            { "Name": "Return", "Time": "960", "Enabled": "True", "Heat": "210", "Cool": "250" },
+                            { "Name": "Sleep", "Time": "1320", "Enabled": "True", "Heat": "160", "Cool": "250" },
+                            { "Name": "Custom 1", "Time": "1380", "Enabled": "True", "Heat": "130", "Cool": "250" },
+                            { "Name": "Custom 2", "Time": "1380", "Enabled": "True", "Heat": "130", "Cool": "250" }
+                        ]
+                    }
+                },
+                "schedule_entry": "",
+                "can_preset": "False",
+                "can_preset_schedule": "False",
+                "preset_fields": ""         }
+        },
+
+        "Tuner":    {
+            "HasVideo": "False",
+            "HasAM":    "True",
+            "HasFM":    "True",
+            "Capabilities":  {
+                "selection_delay": "0",
+                "has_discrete_input_select": "True",
+                "has_toad_input_select": "True",
+                "has_tune_up_down": "True",
+                "has_search_up_down": "True",
+                "has_discrete_preset": "True",
+                "has_preset_up_down": "True",
+                "preset_count": "3",
+                "has_discrete_channel_select": "True",
+                "has_channel_up_down": "True",
+                "preface_band_with_tuner": "True",
+                "rf_network_type": "AMFM"
+            }
+        },
+        
+        "Tv":   {
+            "Capabilities":  {
+                "has_discrete_volume_control": "True",
+                "has_up_down_volume_control": "True",
+                "has_discrete_input_select": "True",
+                "has_toad_input_select": "True",
+                "has_discrete_channel_select": "True",
+                "has_channel_up_down": "True",
+                "has_discrete_bass_control": "True",
+                "has_up_down_bass_control": "True",
+                "has_discrete_treble_control": "True",
+                "has_up_down_treble_control": "True",
+                "has_discrete_balance_control": "True",
+                "has_up_down_balance_control": "True",
+                "has_discrete_loudness_control": "True",
+                "has_toggle_loudness_control": "True",
+                "has_discrete_mute_control": "True",
+                "has_toggle_mute_control": "True",
+                "has_audio": "True",
+                "requires_channel_after_input": "True"
+            }
+        }
+    }
+}

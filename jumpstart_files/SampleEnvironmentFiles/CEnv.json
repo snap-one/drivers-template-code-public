@@ -1,0 +1,17 @@
+{
+	"General": {
+		"TemplateDir": "..\\drivers-template-code",
+		"WorkDir": "",
+		"IncludeLuacheck": "True",
+		"Encrypt": "True"
+	},
+	"Build": {
+		"BuildMethod": "CreateC4Z",
+		"AdditionalFiles": [
+			"BatchFiles\\dev.bat",
+			"BatchFiles\\rel.bat",
+			"BatchFiles\\rel.sh",
+			"BatchFiles\\jr.bat"
+		]
+	}
+}

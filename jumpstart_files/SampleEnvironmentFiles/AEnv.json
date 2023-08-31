@@ -1,0 +1,10 @@
+{
+	"General": {
+		"TemplateDir": "..\\drivers-template-code",
+		"WorkDir": "WorkDir"
+	},
+	"Build": {
+		"BuildMethod": "DriverPackager",
+		"BatchFiles": []
+	}
+}
